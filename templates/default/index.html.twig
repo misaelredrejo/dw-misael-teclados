@@ -1,0 +1,52 @@
+{% extends 'base.html.twig' %}
+
+{% block navbar %}
+    {% include 'navbar/public.html.twig' %}{% endblock %}
+
+
+{% block body %}
+    <div class="container-fluid alert alert-dark alert-dismissible fade show
+         pt-0 pb-2" role="alert" >
+        <div class="row">
+            <div class="col-10 mx-auto">
+                <h2 class="alert-heading display-2">Teclados Misael</h2>
+                <hr>
+                <p class="mb-0 lead">Venta de teclados de todas las gamas y precios, desde teclados mecánicos hasta teclados de membrana. Venta a todo el mundo</p>
+            </div>
+        </div>
+        <button type="button" class="close" data-dismiss="alert" arialabel="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-10 mx-auto">
+                <h6 class="lead">A continuación les mostramos los teclados</h6>
+            </div>
+        </div>
+        <div class="row bg-white">
+            <div class="col-8 mx-auto ">
+                {% for teclado in teclados %}
+                    <div class="media py-2">
+                        <img class="my-auto card-img" style="width:60px"
+                             src="{{ teclado.getImagen() }}" alt="imagen teclado">
+                        <div class="media-body">
+                            
+                            <div class="mx-4 d-flex justify-content-between ">
+                                <h4 class="p-0"> {{ teclado.getNombre() }}
+                                    {#<small ><i > {{ offer.getDActivationDate()| date('d-m-Y') }}</i></small>#}
+                                </h4>
+                                {#<a href="{{ path('offers_show', {'id':offer.getId()}) }}" class="btn btn-outline-primary">More details...</a>#}
+                            </div>
+                            
+                            <div class="px-2">
+                                <p class="card-body text-muted mb-0"> {{ teclado.getDescripcion() }} </p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr/>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endblock %}
