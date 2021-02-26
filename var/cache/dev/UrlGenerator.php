@@ -10,10 +10,13 @@ return [
     'categoria_edit' => [['id'], ['_controller' => 'App\\Controller\\CategoriaController::edit'], [], [['text', '/edit'], ['variable', '/', '[^/]++', 'id'], ['text', '/categoria']], [], []],
     'categoria_delete' => [['id'], ['_controller' => 'App\\Controller\\CategoriaController::delete'], [], [['variable', '/', '[^/]++', 'id'], ['text', '/categoria']], [], []],
     'homepage' => [[], ['_controller' => 'App\\Controller\\DefaultController::index'], [], [['text', '/']], [], []],
+    'security_login' => [[], ['_controller' => 'App\\Controller\\SecurityController::login'], [], [['text', '/login']], [], []],
+    'security_logout' => [[], ['_controller' => 'App\\Controller\\SecurityController::logout'], [], [['text', '/logout']], [], []],
     'teclado_index' => [[], ['_controller' => 'App\\Controller\\TecladoController::index'], [], [['text', '/teclado/']], [], []],
     'teclado_new' => [[], ['_controller' => 'App\\Controller\\TecladoController::new'], [], [['text', '/teclado/new']], [], []],
     'teclado_show' => [['id'], ['_controller' => 'App\\Controller\\TecladoController::show'], [], [['variable', '/', '[^/]++', 'id'], ['text', '/teclado']], [], []],
     'teclado_edit' => [['id'], ['_controller' => 'App\\Controller\\TecladoController::edit'], [], [['text', '/edit'], ['variable', '/', '[^/]++', 'id'], ['text', '/teclado']], [], []],
     'teclado_delete' => [['id'], ['_controller' => 'App\\Controller\\TecladoController::delete'], [], [['variable', '/', '[^/]++', 'id'], ['text', '/teclado']], [], []],
+    'user_register' => [[], ['_controller' => 'App\\Controller\\UserController::register'], [], [['text', '/register']], [], []],
     'easyadmin' => [[], ['_controller' => 'EasyCorp\\Bundle\\EasyAdminBundle\\Controller\\EasyAdminController::indexAction'], [], [['text', '/admin/']], [], []],
 ];

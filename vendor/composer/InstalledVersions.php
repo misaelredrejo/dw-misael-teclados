@@ -19,7 +19,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => '16e7ae9b6ed5af4c84e71e6a041e2189126397b0',
+    'reference' => '89c24ee1930534852fb39adec30fa76118953bfb',
     'name' => '__root__',
   ),
   'versions' => 
@@ -31,7 +31,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => '16e7ae9b6ed5af4c84e71e6a041e2189126397b0',
+      'reference' => '89c24ee1930534852fb39adec30fa76118953bfb',
     ),
     'composer/package-versions-deprecated' => 
     array (
@@ -44,12 +44,12 @@ private static $installed = array (
     ),
     'doctrine/annotations' => 
     array (
-      'pretty_version' => '1.11.1',
-      'version' => '1.11.1.0',
+      'pretty_version' => '1.12.1',
+      'version' => '1.12.1.0',
       'aliases' => 
       array (
       ),
-      'reference' => 'ce77a7ba1770462cd705a91a151b6c3746f9c6ad',
+      'reference' => 'b17c5014ef81d212ac539f07a1001832df1b6d3b',
     ),
     'doctrine/cache' => 
     array (

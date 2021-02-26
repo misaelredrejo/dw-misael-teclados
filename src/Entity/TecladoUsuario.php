@@ -4,6 +4,7 @@ namespace App\Entity;
 
 use App\Repository\TecladoUsuarioRepository;
 use Doctrine\ORM\Mapping as ORM;
+use App\Entity\UserMgr\Usuario;
 
 /**
  * @ORM\Entity(repositoryClass=TecladoUsuarioRepository::class)

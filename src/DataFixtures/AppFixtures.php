@@ -6,7 +6,7 @@ namespace App\DataFixtures;
 use Faker;
 use App\Entity\Teclado;
 use App\Entity\Categoria;
-use App\Entity\Usuario;
+use App\Entity\UserMgr\Usuario;
 use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Persistence\ObjectManager;
 use App\Entity\TecladoUsuario;

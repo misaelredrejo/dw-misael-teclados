@@ -65,6 +65,7 @@ class __TwigTemplate_be7995552cf304172e39f99bcffb11d4fb037168e01f0c16f779be80741
                 
                 <a href=\"";
         // line 21
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("security_login");
         echo "\" >
                     <span class=\"btn btn-primary\">Acceder</span>
                 </a>
@@ -73,6 +74,7 @@ class __TwigTemplate_be7995552cf304172e39f99bcffb11d4fb037168e01f0c16f779be80741
             <div class=\"p-2\">
                 <a href=\"";
         // line 27
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("user_register");
         echo "\" ><span class=\"btn\">Registrarse</span></a>
             </div>
         </div>
@@ -99,7 +101,7 @@ class __TwigTemplate_be7995552cf304172e39f99bcffb11d4fb037168e01f0c16f779be80741
 
     public function getDebugInfo()
     {
-        return array (  76 => 27,  68 => 21,  50 => 6,  46 => 5,  40 => 1,);
+        return array (  77 => 27,  68 => 21,  50 => 6,  46 => 5,  40 => 1,);
     }
 
     public function getSourceContext()
@@ -124,13 +126,13 @@ class __TwigTemplate_be7995552cf304172e39f99bcffb11d4fb037168e01f0c16f779be80741
         <div class=\"container d-flex justify-content-end\">
             <div class=\"p-2\">
                 
-                <a href=\"{#{{ path('security_login') }}#}\" >
+                <a href=\"{{ path('security_login') }}\" >
                     <span class=\"btn btn-primary\">Acceder</span>
                 </a>
                 
             </div>
             <div class=\"p-2\">
-                <a href=\"{#{{ path('user_register') }}#}\" ><span class=\"btn\">Registrarse</span></a>
+                <a href=\"{{ path('user_register') }}\" ><span class=\"btn\">Registrarse</span></a>
             </div>
         </div>
         <!--End  User Security: Login -->

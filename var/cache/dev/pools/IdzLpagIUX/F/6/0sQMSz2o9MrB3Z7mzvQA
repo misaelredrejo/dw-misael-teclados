@@ -1,0 +1,3 @@
+<?php //%255BSymfony%255CBridge%255CDoctrine%255CSecurity%255CUser%255CUserLoaderInterface%2523loadUserByUsername%255D%255B1%255D
+
+return [PHP_INT_MAX, []];

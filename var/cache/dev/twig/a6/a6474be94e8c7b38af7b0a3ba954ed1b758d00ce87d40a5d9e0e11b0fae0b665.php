@@ -165,7 +165,7 @@ class __TwigTemplate_efc3ba839d1a6c94157edefb3b20ebca67808bbd4831544655439fae09e
                             <a class=\"btn btn-primary\" href=\"";
         // line 60
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("teclado_index");
-        echo "\">back to list</a>
+        echo "\">Volver a la lista</a>
                                 
                         </div>
                         ";
@@ -261,7 +261,7 @@ class __TwigTemplate_efc3ba839d1a6c94157edefb3b20ebca67808bbd4831544655439fae09e
                                     {{ form_widget(form.save) }}
                                 </div>
                             </div>
-                            <a class=\"btn btn-primary\" href=\"{{ path('teclado_index') }}\">back to list</a>
+                            <a class=\"btn btn-primary\" href=\"{{ path('teclado_index') }}\">Volver a la lista</a>
                                 
                         </div>
                         {{ form_end(form) }}

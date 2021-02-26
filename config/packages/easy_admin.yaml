@@ -3,5 +3,5 @@ easy_admin:
         # List the entity class name you want to manage
         - App\Entity\Teclado
         - App\Entity\Categoria
-        - App\Entity\Usuario
+        - App\Entity\UserMgr\Usuario
         - App\Entity\TecladoUsuario

@@ -14,6 +14,7 @@ class DefaultController extends AbstractController
      */
     public function index(): Response
     {
+        
         $teclados = $this->getDoctrine()
         ->getRepository(Teclado::class)
         ->findAllAndSortByName();

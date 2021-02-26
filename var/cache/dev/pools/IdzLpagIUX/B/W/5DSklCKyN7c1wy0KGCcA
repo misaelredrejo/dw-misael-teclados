@@ -8,7 +8,7 @@ return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\
     [
         'stdClass' => [
             'targetEntity' => [
-                'App\\Entity\\Usuario',
+                'App\\Entity\\UserMgr\\Usuario',
             ],
             'inversedBy' => [
                 'teclados',

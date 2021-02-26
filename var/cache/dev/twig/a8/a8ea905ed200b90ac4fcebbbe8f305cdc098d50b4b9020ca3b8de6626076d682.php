@@ -130,6 +130,7 @@ class __TwigTemplate_0bb9234797e738150b854113879c1750ff7ff75ff353b1036063c65ad28
         } else {
             // line 16
             echo "                ";
+            $this->loadTemplate("navbar/public.html.twig", "base.html.twig", 16)->display($context);
             // line 17
             echo "            ";
         }
@@ -189,7 +190,7 @@ class __TwigTemplate_0bb9234797e738150b854113879c1750ff7ff75ff353b1036063c65ad28
 
     public function getDebugInfo()
     {
-        return array (  174 => 25,  164 => 21,  157 => 20,  144 => 19,  137 => 18,  134 => 17,  132 => 16,  129 => 15,  126 => 14,  123 => 13,  116 => 12,  107 => 8,  104 => 7,  97 => 6,  84 => 5,  76 => 26,  74 => 25,  70 => 23,  67 => 20,  64 => 19,  62 => 12,  58 => 10,  56 => 6,  52 => 5,  46 => 1,);
+        return array (  175 => 25,  165 => 21,  158 => 20,  145 => 19,  138 => 18,  135 => 17,  132 => 16,  129 => 15,  126 => 14,  123 => 13,  116 => 12,  107 => 8,  104 => 7,  97 => 6,  84 => 5,  76 => 26,  74 => 25,  70 => 23,  67 => 20,  64 => 19,  62 => 12,  58 => 10,  56 => 6,  52 => 5,  46 => 1,);
     }
 
     public function getSourceContext()
@@ -209,7 +210,7 @@ class __TwigTemplate_0bb9234797e738150b854113879c1750ff7ff75ff353b1036063c65ad28
             {% if is_granted('IS_AUTHENTICATED_FULLY') %}
                 {% include 'navbar/private.html.twig' %}
             {% else %}
-                {#{% include 'navbar/public.html.twig' %}#}
+                {% include 'navbar/public.html.twig' %}
             {% endif %}
         {% endblock %}
         {% block body %} {% endblock %}
